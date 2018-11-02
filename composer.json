@@ -38,5 +38,6 @@
                 "Zomato": "RannieOllit\\Zomato\\Facades\\Zomato"
             }
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
