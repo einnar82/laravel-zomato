@@ -1,0 +1,42 @@
+{
+    "name": "einnar82/laravel-zomato",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rannie Ollit",
+            "email": "einnar82@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/einnar82/laravel-zomato",
+    "keywords": ["Laravel", "Zomato"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RannieOllit\\Zomato\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RannieOllit\\Zomato\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RannieOllit\\Zomato\\ZomatoServiceProvider"
+            ],
+            "aliases": {
+                "Zomato": "RannieOllit\\Zomato\\Facades\\Zomato"
+            }
+        }
+    }
+}
